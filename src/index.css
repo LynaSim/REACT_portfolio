@@ -50,6 +50,7 @@
   }
 }
 
+/* Animated colour gradient background */
 body {
   margin: 0;
   width: 100vw;
@@ -64,6 +65,7 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+/* End of animated colour gradient background */
 
 #root {
   width: 1126px;

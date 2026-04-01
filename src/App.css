@@ -1,7 +1,13 @@
 .h1-myname {
   font-family: Shrikhand, serif;
   font-size: 100px;
-  font-weight: regular;
+  font-weight: 400;
+}
+
+.shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .counter {

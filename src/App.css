@@ -1,3 +1,8 @@
+.h1-myname {
+  font-family: Shrikhand, serif;
+  font-size: 100px;
+}
+
 .counter {
   /* styles a button */
   font-size: 16px;

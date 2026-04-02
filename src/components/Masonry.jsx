@@ -225,7 +225,7 @@ const Masonry = ({
             data-key={item.id}
             className="item-wrapper"
             // onClick={() => window.open(item.url, '_blank', 'noopener')}
-            onClick={() => onItemClick(item)}
+            onClick={() => onItemClick(item)} //This is passing the item data to the modal in the Projects page
             onMouseEnter={e => handleMouseEnter(e, item)}
             onMouseLeave={e => handleMouseLeave(e, item)}
           >

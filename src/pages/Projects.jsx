@@ -1,4 +1,4 @@
-// import { masonryItems } from '../data/masonryData';
+import { masonryItems } from '../data/masonryData';
 import Masonry from '../components/Masonry';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import '../App.css';
@@ -7,9 +7,10 @@ import { useState } from 'react';
 
 function Projects() {
     const [show, setShow] = useState(false);
+    const [activeProject, setActiveProject] = useState(null);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = (item) => { setActiveProject(item); setShow(true);}
 
     return (        
         <Container className="">
@@ -34,9 +35,9 @@ function Projects() {
                     </div>
                 </Col>
             </Row>
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} fullscreen={true} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal</Modal.Title>
+          <Modal.Title>{activeProject?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Modal body content</Modal.Body>
       </Modal>

@@ -2,6 +2,7 @@ import { masonryItems } from '../data/masonryData';
 import Masonry from '../components/Masonry';
 import { Container, Row, Col, Modal, ModalFooter } from 'react-bootstrap';
 import '../App.css';
+import './Projects.css';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -41,16 +42,18 @@ function Projects() {
                     <Modal.Title>{activeProject?.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Carousel fade className="bg-dark">
+                    <Carousel fade className="">
                         {activeProject?.carouselImgz.map((img, idx) => (
                             <Carousel.Item key={idx}>
-                                <img src={img} alt="Slide project screenshot image" className="img-fluid"/>
+                                <img src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-3"/>
                             </Carousel.Item>
                         ))}
                 </Carousel>
                 <section>
                 <h3>Description</h3>
-                <p>{activeProject?.description}</p>
+                <div><p>{activeProject?.description}</p></div>
+                <div>View Live Site: <a href={activeProject?.live} target="_blank" rel="noopener noreferrer">{activeProject?.live}</a></div>
+                <div>Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}</a></div>
                 </section>
                 </Modal.Body>
                 <ModalFooter>Footer with links to live site, and link to repository</ModalFooter>

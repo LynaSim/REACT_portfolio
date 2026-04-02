@@ -2,11 +2,11 @@ export const masonryItems =
 [
     {
         id: "1",
-        img: "https://picsum.photos/id/1015/600/900?grayscale",
+        img: "/thumbnails/thumb-1.jpg",
         height: 400,
         title: "My First (Unresponsive ;D) Portfolio Website",
         carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
-        description: "Designing a portfolio with caveman tools like only html and legacy css, which means without Flexbox or Grid.",
+        description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
         repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
         live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/"
     },
@@ -14,7 +14,7 @@ export const masonryItems =
         id: "2",
         img: "https://picsum.photos/id/1011/600/750?grayscale",
         url: "",
-        height: 300,
+        height: 500,
         title: "Title 2"
 
     },
@@ -22,7 +22,7 @@ export const masonryItems =
         id: "3",
         img: "https://picsum.photos/id/1020/600/800?grayscale",
         url: "",
-        height: 500,
+        height: 400,
         title: "Title 3"
     },
     {

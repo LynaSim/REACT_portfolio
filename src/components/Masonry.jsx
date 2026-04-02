@@ -1,5 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { masonryItems } from '../data/masonryData';
+
 
 import './Masonry.css';
 
@@ -49,15 +51,16 @@ const preloadImages = async urls => {
 };
 
 const Masonry = ({
-  items,
+  items = masonryItems,
+  onItemClick,
   ease = 'power3.out',
   duration = 0.6,
   stagger = 0.05,
-  animateFrom = 'bottom',
+  animateFrom = 'random',
   scaleOnHover = true,
-  hoverScale = 0.95,
+  hoverScale = 0.90,
   blurToFocus = true,
-  colorShiftOnHover = false
+  colorShiftOnHover = true
 }) => {
   const columns = useMedia(
     ['(min-width:1500px)', '(min-width:1000px)', '(min-width:600px)', '(min-width:400px)'],
@@ -221,7 +224,8 @@ const Masonry = ({
             key={item.id}
             data-key={item.id}
             className="item-wrapper"
-            onClick={() => window.open(item.url, '_blank', 'noopener')}
+            // onClick={() => window.open(item.url, '_blank', 'noopener')}
+            onClick={() => onItemClick(item)}
             onMouseEnter={e => handleMouseEnter(e, item)}
             onMouseLeave={e => handleMouseLeave(e, item)}
           >

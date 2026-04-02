@@ -3,9 +3,12 @@ export const masonryItems =
     {
         id: "1",
         img: "https://picsum.photos/id/1015/600/900?grayscale",
-        url: "",
         height: 400,
-        title: "My First (Unresponsive ;D) Portfolio Website"
+        title: "My First (Unresponsive ;D) Portfolio Website",
+        carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+        description: "Designing a portfolio with caveman tools like only html and legacy css, which means without Flexbox or Grid.",
+        repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/"
     },
     {
         id: "2",

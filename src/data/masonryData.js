@@ -1,64 +1,85 @@
 export const masonryItems =
-[
-    {
-        id: "1",
-        img: "/thumbnails/thumb-1.jpg",
-        height: 400,
-        title: "My First (Unresponsive ;D) Portfolio Website",
-        carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
-        description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
-        repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
-        live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/"
-    },
-    {
-        id: "2",
-        img: "https://picsum.photos/id/1011/600/750?grayscale",
-        url: "",
-        height: 500,
-        title: "Title 2"
+    [
+        {
+            id: "1",
+            img: "/thumbnails/thumb-1.jpg",
+            height: 400,
+            title: "My First (Unresponsive ;D) Portfolio Website",
+            carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+            description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
+            live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
+            repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        },
+        {
+            id: "2",
+            img: "/thumbnails/thumb-2.jpg",
+            height: 500,
+            title: "Multipage Responsive Website with CSS Flexbox",
+            carouselImgz: ["/img/project2-1.jpg", "/img/project2-2.jpg", "/img/project2-3.jpg", "/img/project2-4.jpg"],
+            description: "",
+            repo: "https://github.com/LynaSim/bootcampW2_Multipage_Responsive_Website.git",
+            live: "https://lynasim.github.io/bootcampW2_Multipage_Responsive_Website/"
 
-    },
-    {
-        id: "3",
-        img: "https://picsum.photos/id/1020/600/800?grayscale",
-        url: "",
-        height: 400,
-        title: "Title 3"
-    },
-    {
-        id: "4",
-        img: "https://picsum.photos/id/1015/600/900?grayscale",
-        url: "",
-        height: 400,
-        title: "Title 4"
-    },
-    {
-        id: "5",
-        img: "https://picsum.photos/id/1011/600/750?grayscale",
-        url: "",
-        height: 250,
-        title: "Title 5"
-    },
-    {
-        id: "6",
-        img: "https://picsum.photos/id/1020/600/800?grayscale",
-        url: "",
-        height: 600,
-        title: "Title 6"
-    },
-    {
-        id: "7",
-        img: "https://picsum.photos/id/1015/600/900?grayscale",
-        url: "",
-        height: 400,
-        title: "Title 7"
-    },
-    {
-        id: "8",
-        img: "https://picsum.photos/id/1011/600/750?grayscale",
-        url: "",
-        height: 250,
-        title: "Title 8"
-    }
-    // ... more items
-]
+        },
+        {
+            id: "3",
+            img: "/thumbnails/thumb-3.jpg",
+            height: 400,
+            title: "Responsive Multipage Website With Bootstrap CSS Framework",
+            carouselImgz: ["/img/project3-1.jpg", "/img/project3-2.jpg", "/img/project3-3.jpg"],
+            description: "",
+            repo: "https://github.com/LynaSim/bootcampW3_Responsive_Website_Bootstrap.git",
+            live: "https://lynasim.github.io/bootcampW3_Responsive_Website_Bootstrap/"
+        },
+        {
+            id: "4",
+            img: "/thumbnails/thumb-4.jpg",
+            height: 400,
+            title: "CRUD TODO List App with JavaScript",
+            carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+            description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
+            live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
+            repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        },
+                {
+            id: "5",
+            img: "/thumbnails/thumb-5.jpg",
+            height: 250,
+            title: "Python README.md Generator",
+            carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+            description: "A small Command Line Interface to easily generate a README file with Markdown formatting. Made in Python, with the InquirerPy and Rich libraries.",
+            live: "",
+            repo: "https://github.com/LynaSim/Python_README_Generator.git",
+        },
+        {
+            id: "6",
+            img: "/thumbnails/thumb-6.jpg",
+            height: 300,
+            title: "JavaScript Todo List App",
+            carouselImgz: ["/img/project6-1.jpg", "/img/project6-2.jpg",],
+            description: "A simple yet functional Todo List application built with JavaScript, HTML, and CSS. Features include adding, editing, and deleting tasks, as well as marking them as complete.",  
+            live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
+            repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        },
+        {
+            id: "7",
+            img: "/thumbnails/thumb-7.jpg",
+            height: 400,
+            title: "My First (Unresponsive ;D) Portfolio Website",
+            carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+            description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
+            live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
+            repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        },
+        {
+            id: "8",
+            img: "/thumbnails/thumb-8.jpg",
+            height: 400,
+            title: "My First (Unresponsive ;D) Portfolio Website",
+            carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
+            description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
+            live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
+            repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
+        }
+        // ... more items
+    ]

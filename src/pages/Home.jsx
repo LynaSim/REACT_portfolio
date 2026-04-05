@@ -3,9 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Divide as Hamburger } from 'hamburger-react';
-
 import HomeAccordion from '../components/HomeAccordion';
-import Footer from '../components/Footer';
 import '../App.css';
 
 function Home() {
@@ -60,12 +58,6 @@ function Home() {
                     {isOpen && (
                         <div>It works!</div>
                     )}
-                </Col>
-            </Row>
-
-            <Row>
-                <Col>
-                    <Footer />
                 </Col>
             </Row>
         </Container>

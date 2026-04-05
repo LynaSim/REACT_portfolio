@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { SiDevbox } from "react-icons/si";
+import { TbHome2 } from "react-icons/tb";
+import { BiHomeHeart } from "react-icons/bi";
 
 
 
@@ -11,7 +14,7 @@ function Navigation() {
 
     return (
 
-        <Container>
+        <Container className="fixed-top">
             <Row>
                 <Col className="d-flex justify-content-center">
                     <Hamburger
@@ -22,14 +25,20 @@ function Navigation() {
                     />
                     {isOpen && (
                         <div><Nav className="ms-auto">
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+                            <Nav.Link as={Link} to="/"><BiHomeHeart style={{ fontSize: '1.7rem', color: 'white' }} /></Nav.Link>
+                            <Nav.Link as={Link} to="/projects"><SiDevbox style={{ fontSize: '1.7rem', color: 'white' }}/></Nav.Link>
                             </Nav></div>
                     )}
                 </Col>
             </Row>
         </Container>
 
+    );
+}
+
+export default Navigation;
+
+// Old Boostrap Navbar code
         // <Navbar bg="dark" variant="dark" expand="lg" className="fixed-top">
         //     <Container className="">
         //         <Navbar.Brand href="/"></Navbar.Brand>
@@ -42,7 +51,3 @@ function Navigation() {
         //         </Navbar.Collapse>
         //     </Container>
         // </Navbar>
-    );
-}
-
-export default Navigation;

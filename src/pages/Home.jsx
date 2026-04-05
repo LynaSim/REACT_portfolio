@@ -2,12 +2,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Divide as Hamburger } from 'hamburger-react';
+
 import HomeAccordion from '../components/HomeAccordion';
 import Footer from '../components/Footer';
 import '../App.css';
 
 function Home() {
     const [count, setCount] = useState(0);
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <Container className="mt-5">
@@ -31,9 +34,9 @@ function Home() {
             </Row>
             <Row>
                 <Col className="d-flex justify-content-center">
-                <Link to="https://github.com/LynaSim" aria-label="GitHub">
-                    <FaGithubSquare style={{ fontSize: '3rem', color: 'white' }} />
-                </Link>
+                    <Link to="https://github.com/LynaSim" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <FaGithubSquare style={{ fontSize: '3rem', color: 'white' }} />
+                    </Link>
                 </Col>
             </Row>
             <Row>
@@ -46,6 +49,20 @@ function Home() {
                     <FaEnvelope style={{ fontSize: '2.5rem', color: 'white' }} />
                 </Col>
             </Row>
+            <Row>
+                <Col className="d-flex justify-content-center">
+                    <Hamburger
+                        color="white"
+                        rounded
+                        label="Show menu"
+                        toggled={isOpen} toggle={setOpen}
+                    />
+                    {isOpen && (
+                        <div>It works!</div>
+                    )}
+                </Col>
+            </Row>
+
             <Row>
                 <Col>
                     <Footer />

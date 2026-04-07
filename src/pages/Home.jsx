@@ -1,14 +1,11 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Divide as Hamburger } from 'hamburger-react';
 import HomeAccordion from '../components/HomeAccordion';
 import '../App.css';
 
 function Home() {
-    const [count, setCount] = useState(0);
-    const [isOpen, setOpen] = useState(false)
 
     return (
         <Container className="mt-5">
@@ -17,11 +14,6 @@ function Home() {
                     <header className="text-white text-center">
                         <h1 className="h1-myname">Lyna Sim</h1>
                         <h1>Full Stack Web Developer</h1>
-                        <button
-                            className="counter"
-                            onClick={() => setCount((count) => count + 1)}>
-                            Count is {count}
-                        </button>
                     </header>
                 </Col>
             </Row>
@@ -30,34 +22,25 @@ function Home() {
                     <HomeAccordion />
                 </Col>
             </Row>
-            <Row>
+            <Row className="my-1">
                 <Col className="d-flex justify-content-center">
                     <Link to="https://github.com/LynaSim" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <FaGithubSquare style={{ fontSize: '3rem', color: 'white' }} />
                     </Link>
                 </Col>
             </Row>
-            <Row>
+            <Row className="my-1">
                 <Col className="d-flex justify-content-center">
+                <Link to="https://www.linkedin.com/in/s-lyna-dev/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin style={{ fontSize: '3rem', color: 'white' }} />
+                    </ Link>
                 </Col>
             </Row>
-            <Row>
+            <Row className="my-1">
                 <Col className="d-flex justify-content-center">
+                <Link to="mailto:s.lyna.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope style={{ fontSize: '2.5rem', color: 'white' }} />
-                </Col>
-            </Row>
-            <Row>
-                <Col className="d-flex justify-content-center">
-                    <Hamburger
-                        color="white"
-                        rounded
-                        label="Show menu"
-                        toggled={isOpen} toggle={setOpen}
-                    />
-                    {isOpen && (
-                        <div>It works!</div>
-                    )}
+                </Link>
                 </Col>
             </Row>
         </Container>

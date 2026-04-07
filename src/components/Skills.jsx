@@ -9,44 +9,137 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { Row, Col } from 'react-bootstrap';
+import { IconContext } from "react-icons";
+import Card from 'react-bootstrap/Card';
+import './Skills.css';
+
 
 function Skills() {
 
     return (
-        <>
+
+        <IconContext.Provider value={{ color: "black", size: "2rem" }}>
             <Row>
                 <Col xs={12}>
-                    <h3>Frontend</h3>
+                    <h3 className="mb-3">Frontend</h3>
                 </Col>
-                <Col>
-                    <FaReact />
-                    <SiJavascript />
-                    <FaBootstrap />
-                    <FaHtml5 />
-                    <FaCss3Alt />
+                <Col className="d-flex flex-wrap gap-2">
+                    {/* <Card style={{ width: 'fit-content' , height: 'fit-content' }}> */}
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><FaReact /></Card.Title>
+                            <Card.Text>
+                                React
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><SiJavascript /></Card.Title>
+                            <Card.Text>
+                                JavaScript
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><FaBootstrap /></Card.Title>
+                            <Card.Text>
+                                Bootstrap
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><FaHtml5 /></Card.Title>
+                            <Card.Text>
+                                HTML5
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><FaCss3Alt /></Card.Title>
+                            <Card.Text>
+                                CSS3
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    {/* <ul>
+                        <li><FaReact />   React</li>
+                        <li><SiJavascript />   JavaScript</li>
+                        <li><FaBootstrap />   Bootstrap CSS</li>
+                        <li><FaHtml5 />   HTML5</li>
+                        <li><FaCss3Alt />   CSS3</li>
+                    </ul> */}
                 </Col>
             </Row>
-            <Row>
+            <hr />
+            <Row className="mt-5">
                 <Col xs={12}>
-                    <h3>Backend</h3>
+                    <h3 className="mb-3">Backend</h3>
                 </Col>
-                <Col>
-                    <FaNode />
+                <Col className="d-flex flex-wrap gap-2">
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><FaNode /></Card.Title>
+                            <Card.Text>
+                                Node.js
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><SiExpress /></Card.Title>
+                            <Card.Text>
+                                Express.js
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><SiMysql /></Card.Title>
+                            <Card.Text>
+                                MySQL
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><SiSequelize /></Card.Title>
+                            <Card.Text>
+                                Sequelize<br />ORM
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="skill-card">
+                        <Card.Body className="p-1 text-center">
+                            <Card.Title><SiJsonwebtokens /></Card.Title>
+                            <Card.Text>
+                                JSON<br />Web Tokens
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    {/* <FaNode />
                     <SiExpress />
                     <SiMysql />
                     <SiSequelize />
-                    <SiJsonwebtokens />
+                    <SiJsonwebtokens /> */}
                 </Col>
             </Row>
-            <Row>
+            <hr />
+            <Row className="mt-4">
                 <Col xs={12}>
-                    <h3>Industry Standard Tools</h3>
+                    <h3 className="mb-3">Tools</h3>
                 </Col>
                 <Col>
-                    <p>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p>
+                    <p style={{ color: "black" }}>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p>
                 </Col>
             </Row>
-        </>
+            <hr />
+        </IconContext.Provider>
+
+
     );
 }
 

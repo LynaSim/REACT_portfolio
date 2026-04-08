@@ -13,14 +13,12 @@ To run this project locally:
 * Clone the repo:
 
 ```
-Bash
 git clone https://github.com/LynaSim/REACT_portfolio.git
 ```
 
 * Install dependencies:
 
 ```
-Bash
 npm install
 ```
 
@@ -28,7 +26,6 @@ npm install
 * Launch the development server:
 
 ```
-Bash
 npm run dev
 ```
 
@@ -44,7 +41,7 @@ npm run dev
 * **Icons**:	    React Icons (https://react-icons.github.io/react-icons/)
 * **Other UI Element**:
                     Hamburger React (https://hamburger-react.netlify.app/)
-* **Typography**:	Shrikhand (Google Fonts)
+* **Font**:	Shrikhand (Google Fonts)
 
 ## Key Features
 

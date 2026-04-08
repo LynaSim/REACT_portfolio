@@ -1,9 +1,9 @@
+// This was provided by React Bits
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { masonryItems } from '../data/masonryData';
-
-
 import './Masonry.css';
+
 
 const useMedia = (queries, values, defaultValue) => {
   const get = () => values[queries.findIndex(q => matchMedia(q).matches)] ?? defaultValue;

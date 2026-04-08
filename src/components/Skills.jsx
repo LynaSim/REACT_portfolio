@@ -65,13 +65,6 @@ function Skills() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    {/* <ul>
-                        <li><FaReact />   React</li>
-                        <li><SiJavascript />   JavaScript</li>
-                        <li><FaBootstrap />   Bootstrap CSS</li>
-                        <li><FaHtml5 />   HTML5</li>
-                        <li><FaCss3Alt />   CSS3</li>
-                    </ul> */}
                 </Col>
             </Row>
             <hr />
@@ -120,11 +113,6 @@ function Skills() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    {/* <FaNode />
-                    <SiExpress />
-                    <SiMysql />
-                    <SiSequelize />
-                    <SiJsonwebtokens /> */}
                 </Col>
             </Row>
             <hr />
@@ -138,8 +126,6 @@ function Skills() {
             </Row>
             <hr />
         </IconContext.Provider>
-
-
     );
 }
 

@@ -1,10 +1,11 @@
-import { masonryItems } from '../data/masonryData';
+// import { masonryItems } from '../data/masonryData';
 import Masonry from '../components/Masonry';
-import { Container, Row, Col, Modal, ModalFooter } from 'react-bootstrap';
-import '../App.css';
-import './Projects.css';
+import { Container, Row, Col, Modal } from 'react-bootstrap';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
+import '../App.css';
+import './Projects.css';
 
 
 function Projects() {
@@ -18,21 +19,12 @@ function Projects() {
         <Container className="">
             <Row className="mt-5">
                 <Col xs={12}>
-                    <h1 className="text-white fs-1 shrikhand-regular">My Projects</h1>
+                    <h1 className="text-white text-center fs-1 shrikhand-regular my-5">My Projects</h1>
                 </Col>
                 <Col>
-                    <div style={{ minHeight: '600px', position: 'relative', marginBottom: '50px' }}>
+                    <div style={{ minHeight: '600px', position: 'relative', marginBottom: '10px' , border: '2px solid red'}}>
                         <Masonry
                             onItemClick={handleShow}
-                        // items={masonryItems}
-                        // ease="power3.out"
-                        // duration={0.6}
-                        // stagger={0.05}
-                        // animateFrom="random"
-                        // scaleOnHover
-                        // hoverScale={0.90}
-                        // blurToFocus
-                        // colorShiftOnHover={true}
                         />
                     </div>
                 </Col>
@@ -45,18 +37,25 @@ function Projects() {
                     <Carousel fade className="">
                         {activeProject?.carouselImgz.map((img, idx) => (
                             <Carousel.Item key={idx}>
-                                <img src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-3"/>
+                                <Image src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-4" />
                             </Carousel.Item>
                         ))}
-                </Carousel>
-                <section>
-                <h3>Description</h3>
-                <div><p>{activeProject?.description}</p></div>
-                <div>View Live Site: <a href={activeProject?.live} target="_blank" rel="noopener noreferrer">{activeProject?.live}</a></div>
-                <div>Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}</a></div>
-                </section>
+                    </Carousel>
+                    <section>
+                        <h3>Description</h3>
+                        <div><p>{activeProject?.description}</p></div>
+                        {activeProject?.live && (
+                            <div>
+                                View Live Site:
+                                <a href={activeProject.live} target="_blank" rel="noopener noreferrer">
+                                    {activeProject.live}
+                                </a>
+                            </div>
+                        )}
+                        {/* <div>View Live Site: <a href={activeProject?.live} target="_blank" rel="noopener noreferrer">{activeProject?.live}</a></div> */}
+                        <div>Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}</a></div>
+                    </section>
                 </Modal.Body>
-                <ModalFooter>Footer with links to live site, and link to repository</ModalFooter>
             </Modal>
         </Container>
     );

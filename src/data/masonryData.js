@@ -56,7 +56,7 @@ export const masonryItems =
             img: "/thumbnails/thumb-8.jpg",
             height: 500,
             title: "3rd Party API Requests with JavaScript",
-            carouselImgz: ["/img/project8-1.jpg", "/img/project8-2.jpg"],
+            carouselImgz: ["/img/project8-1.jpg", "/img/project8-2.jpg", "/img/project8-3.jpg", "/img/project8-4.jpg"],
             description: "",
             live: "https://gareths-debug.github.io/Institute-of-devs/",
             repo: "https://github.com/garethS-debug/Institute-of-devs.git",

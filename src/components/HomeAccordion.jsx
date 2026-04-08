@@ -62,19 +62,16 @@ function HomeAccordion() {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card className="border border-0 bg-transparent text-white">
+      {/* <Card className="border border-0 bg-transparent text-white">
         <Card.Header className="d-flex justify-content-center border border-0 bg-transparent">
           <ContextAwareToggle eventKey="2">Projects</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
           <Card.Body className="border border-0 bg-transparent text-center">
-            <Link to="/projects" target="_blank" rel="noopener noreferrer">
-            This old link will take you to my projects.
-          </Link>
           <Nav.Link as={Link} to="/projects">This new link will take you to my projects.</Nav.Link>
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
       <Card className="border border-0 bg-transparent text-white">
         <Card.Header className="d-flex justify-content-center border border-0 bg-transparent shrikhand-regular fs-3">
          <Nav.Link as={Link} to="/projects">Projects</Nav.Link>

@@ -50,14 +50,12 @@ function Projects() {
                             </div>
                         {activeProject?.live && (
                             <div className="text-wrap">
-                                View Live Site: 
-                                <a href={activeProject.live} target="_blank" rel="noopener noreferrer">
+                                View Live Site:  <a href={activeProject.live} target="_blank" rel="noopener noreferrer">
                                     {activeProject.live}
                                 </a>
                             </div>
                         )}
-                        {/* <div>View Live Site: <a href={activeProject?.live} target="_blank" rel="noopener noreferrer">{activeProject?.live}</a></div> */}
-                        <div className="text-wrap">Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}
+                        <div className="text-wrap">Repository:  <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}
                         </a>
                         </div>
                     </section>

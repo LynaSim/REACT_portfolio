@@ -22,7 +22,7 @@ function Projects() {
                     <h1 className="text-white text-center fs-1 shrikhand-regular my-5">My Projects</h1>
                 </Col>
                 <Col>
-                    <div style={{ minHeight: '600px', position: 'relative', marginBottom: '10px' , border: '2px solid red'}}>
+                    <div style={{ minHeight: '600px', position: 'relative', marginBottom: '10px'}}>
                         <Masonry
                             onItemClick={handleShow}
                         />
@@ -43,17 +43,23 @@ function Projects() {
                     </Carousel>
                     <section>
                         <h3>Description</h3>
-                        <div><p>{activeProject?.description}</p></div>
+                        <div>
+                            <p>
+                                {activeProject?.description}
+                            </p>
+                            </div>
                         {activeProject?.live && (
-                            <div>
-                                View Live Site:
+                            <div className="text-wrap">
+                                View Live Site: 
                                 <a href={activeProject.live} target="_blank" rel="noopener noreferrer">
                                     {activeProject.live}
                                 </a>
                             </div>
                         )}
                         {/* <div>View Live Site: <a href={activeProject?.live} target="_blank" rel="noopener noreferrer">{activeProject?.live}</a></div> */}
-                        <div>Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}</a></div>
+                        <div className="text-wrap">Repository: <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}
+                        </a>
+                        </div>
                     </section>
                 </Modal.Body>
             </Modal>

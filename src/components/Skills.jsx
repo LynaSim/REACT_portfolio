@@ -121,7 +121,7 @@ function Skills() {
                     <h3 className="mb-3">Tools</h3>
                 </Col>
                 <Col>
-                    <p style={{ color: "black" }}>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p>
+                    <p style={{ color: "white" }}>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p>
                 </Col>
             </Row>
             <hr />

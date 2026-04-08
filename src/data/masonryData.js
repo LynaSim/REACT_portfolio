@@ -4,9 +4,9 @@ export const masonryItems =
             id: "1",
             img: "/thumbnails/thumb-1.jpg",
             height: 300,
-            title: "My First (Unresponsive ;D) Portfolio Website",
+            title: "My First Portfolio Website With Legacy CSS",
             carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
-            description: "Imagine landing on a coding bootcamp and being given caveman tools to design a professional portflolio. It was the challenge I took on for the first assignment. Only \"legacy\" CSS here, no Flexbox or Grid allowed.",
+            description: "The first week of the bootcamp challenged us to build a portfolio using only rudimentary tools, such as plain HTML and CSS. No Flexbox or Grid were allowed for positioning, not even rounded borders to make things pretty.",
             live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
             repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
         },
@@ -16,7 +16,7 @@ export const masonryItems =
             height: 500,
             title: "Multipage Responsive Website with CSS Flexbox",
             carouselImgz: ["/img/project2-1.jpg", "/img/project2-2.jpg", "/img/project2-3.jpg", "/img/project2-4.jpg"],
-            description: "",
+            description: "Here, I've built a responsive multipage website using CSS Flexbox for layout and positioning.",
             repo: "https://github.com/LynaSim/bootcampW2_Multipage_Responsive_Website.git",
             live: "https://lynasim.github.io/bootcampW2_Multipage_Responsive_Website/"
 
@@ -27,7 +27,7 @@ export const masonryItems =
             height: 400,
             title: "Responsive Multipage Website With Bootstrap CSS Framework",
             carouselImgz: ["/img/project3-1.jpg", "/img/project3-4.jpg", "/img/project3-2.jpg", "/img/project3-3.jpg"],
-            description: "",
+            description: "In week 3 of the bootcamp, I migrated my previous CSS Flexbox website to the Bootstrap CSS framework. This involved restructuring the HTML to utilise Bootstrap's grid system and components, as well as applying Bootstrap's utility classes for styling and responsiveness.",
             repo: "https://github.com/LynaSim/bootcampW3_Responsive_Website_Bootstrap.git",
             live: "https://lynasim.github.io/bootcampW3_Responsive_Website_Bootstrap/"
         },
@@ -57,7 +57,7 @@ export const masonryItems =
             height: 500,
             title: "3rd Party API Requests with JavaScript",
             carouselImgz: ["/img/project8-1.jpg", "/img/project8-2.jpg", "/img/project8-3.jpg", "/img/project8-4.jpg"],
-            description: "",
+            description: "Come Dine With Words is the result of collaboration between myself and 2 fellow bootcamp students for our first group project. We built a recipe randomiser that calls upon THEMEALDB API (https://www.themealdb.com/) to fetch recipes based on user input. The app is built with Vanilla JavaScript and styled with Bootstrap CSS.",
             live: "https://gareths-debug.github.io/Institute-of-devs/",
             repo: "https://github.com/garethS-debug/Institute-of-devs.git",
         },

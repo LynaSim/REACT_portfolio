@@ -44,7 +44,7 @@ npm run dev
 * **Icons**:	    React Icons (https://react-icons.github.io/react-icons/)
 * **Other UI Element**:
                     Hamburger React (https://hamburger-react.netlify.app/)
-* **Font**:	Shrikhand (Google Fonts)
+* **Font**:	Shrikhand ([Google Fonts](https://fonts.google.com/specimen/Shrikhand))
 
 ## Key Features
 
@@ -65,6 +65,8 @@ The combination of bold colours for the background and Shrikhand Font was inspir
 ## Author
 
 Lyna Sim
+
+
 s.lyna.dev@gmail.com
 
 ## Licence

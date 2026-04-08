@@ -6,7 +6,7 @@ export const masonryItems =
             height: 300,
             title: "My First Portfolio Website With Legacy CSS",
             carouselImgz: ["/img/project1-1.jpg", "/img/project1-2.jpg",],
-            description: "The first week of the bootcamp challenged us to build a portfolio using only rudimentary tools, such as plain HTML and CSS. No Flexbox or Grid were allowed for positioning, not even rounded borders to make things pretty.",
+            description: "The first week of the bootcamp challenged us to build a portfolio using only rudimentary tools, such as plain HTML and CSS without Flexbox or Grid, or any CSS framework.",
             live: "https://lynasim.github.io/bootcampW1_Personal_Portfolio_Legacy_CSS/",
             repo: "https://github.com/LynaSim/bootcampW1_Personal_Portfolio_Legacy_CSS.git",
         },

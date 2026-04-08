@@ -2,8 +2,9 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import AccordionContext from 'react-bootstrap/AccordionContext';
-import { useAccordionButton } from 'react-bootstrap/AccordionButton'
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav';
 import './HomeAccordion.css';
 import Skills from './Skills';
 
@@ -45,7 +46,7 @@ function HomeAccordion() {
           <ContextAwareToggle eventKey="0">Overview</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body className="container-mdborder border-0 bg-transparent">Hello! I'm Lyna, and I've just concluded a 12 weeks bootcamp in web development, thus officially starting my path as a full stack developer!<br />
+          <Card.Body className="border border-0 bg-transparent">Hello! I'm Lyna, and I've just concluded a 12 weeks bootcamp in web development, thus officially starting my path as a full stack developer!<br />
             My journey began in the publishing industry as an XML content specialist. I managed complex XML data structures and prepared them for the next step of the production pipeline. With authors, I liaised closely to ensure their intent was translated accurately. With developers, I collaborated even closer to make sure the data was compliant with standards and fit for transformation.<br /> It is then that I discovered web development and, while I enjoyed the logic of data, I was deeply fascinated by the process of turning that data into interactive user experiences.<br />
             Years later, after time dedicated to my family and a very rewarding chapter in SEN education, I returned to my technical roots by completing this intensive but thoroughly enjoyable 12-week full-stack bootcamp.<br />
             I cannot wait for opportunities to combine my diverse skills and experiences into building applications I feel passionate about!</Card.Body>
@@ -68,10 +69,16 @@ function HomeAccordion() {
         <Accordion.Collapse eventKey="2">
           <Card.Body className="border border-0 bg-transparent text-center">
             <Link to="/projects" target="_blank" rel="noopener noreferrer">
-            This link will take you to my projects.
+            This old link will take you to my projects.
           </Link>
+          <Nav.Link as={Link} to="/projects">This new link will take you to my projects.</Nav.Link>
           </Card.Body>
         </Accordion.Collapse>
+      </Card>
+      <Card className="border border-0 bg-transparent text-white">
+        <Card.Header className="d-flex justify-content-center border border-0 bg-transparent shrikhand-regular fs-3">
+         <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+        </Card.Header>
       </Card>
     </Accordion>
   );

@@ -1,28 +1,72 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+In this project, I sought to build a modern and responsive portfolio with React and focused on a "Component-based" architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+To showcase my past projects, I used a sleek and dynamic gallery component, provided by React Bits and powered with the GSAP animation library.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To run this project locally:
 
-## Expanding the ESLint configuration
+* Clone the repo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+Bash
+git clone https://github.com/LynaSim/REACT_portfolio.git
+```
+
+* Install dependencies:
+
+```
+Bash
+npm install
+```
 
 
-### Ressources and tools used so far:
+* Launch the development server:
 
-* React Bits
-* React-Bootstrap
-* Vanilla Bootstrap (for the CSS classes)
-* GSAP
-* react-router-dom and react-dom
-* Google Free Font - Shrikhand
+```
+Bash
+npm run dev
+```
+
+## Tech Stack & Resources
+
+* **Framework**:    React (Vite)
+* **Routing**:	    React Router (https://reactrouter.com/home)
+* **UI and Styling**:	    React-Bootstrap (https://react-bootstrap.netlify.app/)& 
+* **Styling**:      Vanilla Bootstrap (https://getbootstrap.com/)
+* **Masonry Component and animations**:
+	            GSAP ([GreenSock](https://gsap.com/)) & React Bits (https://reactbits.dev/)
+
+* **Icons**:	    React Icons (https://react-icons.github.io/react-icons/)
+* **Other UI Element**:
+                    Hamburger React (https://hamburger-react.netlify.app/)
+* **Typography**:	Shrikhand (Google Fonts)
+
+## Key Features
+
+* **Dynamic Masonry Gallery**: A fluid, animated grid that showcases projects using GSAP animation library.
+
+* **Detailed Project Modals**: Clicking a gallery item opens a full-screen modal. Each modal showcases for each project:
+    * a carousel with screenshots
+    * a description
+    * links to GitHub repo and live demos.
+
+* **Single Page Application (SPA)**: Smooth page transition thanks to React Router.
 
 
+## Inspiration & Design
+
+The combination of bold colours for the background and Shrikhand Font was inspired by the design of **vanilla-extract** (https://vanilla-extract.style/).
+
+## Author
+
+Lyna Sim
+s.lyna.dev@gmail.com
+
+## Licence
+
+MIT

@@ -34,9 +34,9 @@ function Projects() {
                     <Modal.Title>{activeProject?.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Carousel fade className="">
+                    <Carousel fade data-bs-theme="dark">
                         {activeProject?.carouselImgz.map((img, idx) => (
-                            <Carousel.Item key={idx}>
+                            <Carousel.Item key={idx} className="d-flex justify-content-center">
                                 <Image src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-4" />
                             </Carousel.Item>
                         ))}

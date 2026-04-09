@@ -9,6 +9,10 @@ In this project, I aimed to build a modern and responsive portfolio with React a
 
 To showcase my past projects, I used a sleek and dynamic gallery component, provided by **React Bits** and powered with the **GSAP** animation library.
 
+## Live Site
+
+https://react-portfolio-2h31.onrender.com/
+
 ## Getting Started
 
 To run this project locally:

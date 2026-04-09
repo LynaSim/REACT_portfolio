@@ -1,5 +1,7 @@
-import { Container, Row, Col } from 'react-bootstrap';
-// import { useState } from 'react';
+// import { Container, Row, Col } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import HomeAccordion from '../components/HomeAccordion';
@@ -19,7 +21,7 @@ function Home() {
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col sm={7} className="mx-auto">
                     <HomeAccordion />
                 </Col>
             </Row>

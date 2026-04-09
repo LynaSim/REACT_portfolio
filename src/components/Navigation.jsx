@@ -14,9 +14,8 @@ function Navigation() {
 
     return (
 
-        <Container className="fixed-top">
-            <Row>
-                <Col className="d-flex justify-content-center">
+
+                <div className="d-flex justify-content-center">
                     <Hamburger
                         color="white"
                         rounded
@@ -24,14 +23,15 @@ function Navigation() {
                         toggled={isOpen} toggle={setOpen}
                     />
                     {isOpen && (
-                        <div><Nav className="ms-auto">
+
+                            <Nav>
                             <Nav.Link as={Link} to="/"><BiHomeHeart style={{ fontSize: '1.7rem', color: 'white' }} /></Nav.Link>
                             <Nav.Link as={Link} to="/projects"><SiDevbox style={{ fontSize: '1.7rem', color: 'white' }}/></Nav.Link>
-                            </Nav></div>
+                            </Nav>
+
                     )}
-                </Col>
-            </Row>
-        </Container>
+                </div>
+
 
     );
 }

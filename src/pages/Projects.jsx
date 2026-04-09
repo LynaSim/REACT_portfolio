@@ -16,17 +16,17 @@ function Projects() {
     const handleShow = (item) => { setActiveProject(item); setShow(true); }
 
     return (
-        <Container className="">
+        <Container>
             <Row className="mt-5">
                 <Col xs={12}>
                     <h1 className="text-white text-center fs-1 shrikhand-regular my-5">My Projects</h1>
                 </Col>
-                <Col>
-                    <div style={{ minHeight: '600px', position: 'relative', marginBottom: '10px'}}>
+                <Col style={{ minHeight: '600px', position: 'relative', marginBottom: '10px'}}>
+
                         <Masonry
                             onItemClick={handleShow}
                         />
-                    </div>
+
                 </Col>
             </Row>
             <Modal show={show} fullscreen={true} onHide={handleClose}>

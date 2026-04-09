@@ -1,17 +1,10 @@
-import { SiSequelize } from "react-icons/si";
-import { SiJsonwebtokens } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaBootstrap } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import { SiSequelize, SiJsonwebtokens, SiMysql, SiExpress, SiJavascript  } from "react-icons/si";
+import { FaNode, FaCss3Alt, FaHtml5, FaBootstrap, FaReact } from "react-icons/fa";
 import { Row, Col } from 'react-bootstrap';
 import { IconContext } from "react-icons";
 import Card from 'react-bootstrap/Card';
 import './Skills.css';
+import GenerateSkillCards from "./GenerateSkillCards";
 
 
 function Skills() {
@@ -120,8 +113,9 @@ function Skills() {
                 <Col xs={12}>
                     <h3 className="mb-3">Tools</h3>
                 </Col>
-                <Col>
-                    <p style={{ color: "white" }}>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p>
+                <Col className="d-flex flex-wrap justify-content-center gap-3">
+                    <GenerateSkillCards />
+                    {/* <p style={{ color: "white" }}>Git, GitHub (collaboration), VS Code, npm, Vite, Postman, DBeaver, Render.</p> */}
                 </Col>
             </Row>
             <hr />

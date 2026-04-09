@@ -2,9 +2,12 @@
 
 ## Description
 
-In this project, I sought to build a modern and responsive portfolio with React and focused on a "Component-based" architecture.
+![react_portfolio_screen](https://github.com/user-attachments/assets/95c0816b-1434-49ad-9595-8ae1cfeb063f)
 
-To showcase my past projects, I used a sleek and dynamic gallery component, provided by React Bits and powered with the GSAP animation library.
+
+In this project, I aimed to build a modern and responsive portfolio with React and focused on a "Component-based" architecture.
+
+To showcase my past projects, I used a sleek and dynamic gallery component, provided by **React Bits** and powered with the **GSAP** animation library.
 
 ## Getting Started
 
@@ -41,7 +44,7 @@ npm run dev
 * **Icons**:	    React Icons (https://react-icons.github.io/react-icons/)
 * **Other UI Element**:
                     Hamburger React (https://hamburger-react.netlify.app/)
-* **Font**:	Shrikhand (Google Fonts)
+* **Font**:	Shrikhand ([Google Fonts](https://fonts.google.com/specimen/Shrikhand))
 
 ## Key Features
 
@@ -62,6 +65,8 @@ The combination of bold colours for the background and Shrikhand Font was inspir
 ## Author
 
 Lyna Sim
+
+
 s.lyna.dev@gmail.com
 
 ## Licence

@@ -23,7 +23,7 @@ function Skills() {
                 <Col xs={12}>
                     <h3 className="mb-3">Frontend</h3>
                 </Col>
-                <Col className="d-flex flex-wrap gap-2">
+                <Col className="d-flex flex-wrap justify-content-center gap-3">
                     {/* <Card style={{ width: 'fit-content' , height: 'fit-content' }}> */}
                     <Card className="skill-card">
                         <Card.Body className="p-1 text-center">
@@ -72,7 +72,7 @@ function Skills() {
                 <Col xs={12}>
                     <h3 className="mb-3">Backend</h3>
                 </Col>
-                <Col className="d-flex flex-wrap gap-2">
+                <Col className="d-flex flex-wrap justify-content-center gap-3">
                     <Card className="skill-card">
                         <Card.Body className="p-1 text-center">
                             <Card.Title><FaNode /></Card.Title>

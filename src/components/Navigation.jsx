@@ -6,6 +6,8 @@ import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { SiDevbox } from "react-icons/si";
 import { TbHome2 } from "react-icons/tb";
 import { BiHomeHeart } from "react-icons/bi";
+import { IconContext } from "react-icons";
+
 
 
 
@@ -14,9 +16,10 @@ function Navigation() {
 
     return (
 
-
+        <IconContext.Provider value={{ color: "white", size: "2.5rem" }}>
                 <div className="d-flex justify-content-center">
                     <Hamburger
+                        size={48}
                         color="white"
                         rounded
                         label="Show menu"
@@ -31,6 +34,7 @@ function Navigation() {
 
                     )}
                 </div>
+        </IconContext.Provider>
 
 
     );

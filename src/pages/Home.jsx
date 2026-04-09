@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import HomeAccordion from '../components/HomeAccordion';
+import { IconContext } from "react-icons";
 import '../App.css';
 
 function Home() {
@@ -22,27 +23,29 @@ function Home() {
                     <HomeAccordion />
                 </Col>
             </Row>
-            <Row className="my-1">
+            <IconContext.Provider value={{ color: "white", size: "4rem" }}>
+            <Row className="my-2">
                 <Col className="d-flex justify-content-center">
                     <Link to="https://github.com/LynaSim" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                        <FaGithubSquare style={{ fontSize: '3rem', color: 'white' }} />
+                        <FaGithubSquare />
                     </Link>
                 </Col>
             </Row>
-            <Row className="my-1">
+            <Row className="my-2">
                 <Col className="d-flex justify-content-center">
                 <Link to="https://www.linkedin.com/in/s-lyna-dev/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin style={{ fontSize: '3rem', color: 'white' }} />
+                    <FaLinkedin />
                     </ Link>
                 </Col>
             </Row>
-            <Row className="my-1">
+            <Row className="my-2">
                 <Col className="d-flex justify-content-center">
                 <Link to="mailto:s.lyna.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-                    <FaEnvelope style={{ fontSize: '2.5rem', color: 'white' }} />
+                    <FaEnvelope />
                 </Link>
                 </Col>
             </Row>
+            </IconContext.Provider>
         </Container>
     );
 }

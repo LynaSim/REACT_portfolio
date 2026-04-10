@@ -1,4 +1,3 @@
-// import { masonryItems } from '../data/masonryData';
 import Masonry from '../components/Masonry';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import { useState } from 'react';
@@ -17,50 +16,52 @@ function Projects() {
 
     return (
         <Container>
-            <Row className="mt-5">
+            <Row className="mt-2">
                 <Col xs={12}>
                     <h1 className="text-white text-center fs-1 shrikhand-regular my-5">My Projects</h1>
                 </Col>
-                <Col style={{ minHeight: '600px', position: 'relative', marginBottom: '10px'}}>
-
-                        <Masonry
-                            onItemClick={handleShow}
-                        />
-
+                <Col style={{ overflowY: 'auto', minHeight: '600px', position: 'relative', marginBottom: '10px'}}>
+                    <Masonry
+                        onItemClick={handleShow}
+                    />
                 </Col>
             </Row>
-            <Modal show={show} fullscreen={true} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{activeProject?.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Carousel fade data-bs-theme="dark">
-                        {activeProject?.carouselImgz.map((img, idx) => (
-                            <Carousel.Item key={idx} className="d-flex justify-content-center">
-                                <Image src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-4" />
-                            </Carousel.Item>
-                        ))}
-                    </Carousel>
-                    <section>
-                        <h3>Description</h3>
-                        <div>
-                            <p>
-                                {activeProject?.description}
-                            </p>
-                            </div>
-                        {activeProject?.live && (
-                            <div className="text-wrap">
-                                View Live Site:  <a href={activeProject.live} target="_blank" rel="noopener noreferrer">
-                                    {activeProject.live}
+            <Row>
+                <Col>
+                    <Modal show={show} fullscreen={true} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>{activeProject?.title}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Carousel fade data-bs-theme="dark">
+                                {activeProject?.carouselImgz.map((img, idx) => (
+                                    <Carousel.Item key={idx} className="d-flex justify-content-center">
+                                        <Image src={img} alt="Slide project screenshot image" className="carousel-img img-fluid rounded-4" />
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
+                            <section>
+                                <h3>Description</h3>
+                                <div>
+                                    <p>
+                                        {activeProject?.description}
+                                    </p>
+                                </div>
+                                {activeProject?.live && (
+                                    <div className="text-wrap">
+                                        View Live Site:<br /><a href={activeProject.live} target="_blank" rel="noopener noreferrer">
+                                            {activeProject.live}
+                                        </a>
+                                    </div>
+                                )}
+                                <div className="text-wrap">Repository:<br /><a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}
                                 </a>
-                            </div>
-                        )}
-                        <div className="text-wrap">Repository:  <a href={activeProject?.repo} target="_blank" rel="noopener noreferrer">{activeProject?.repo}
-                        </a>
-                        </div>
-                    </section>
-                </Modal.Body>
-            </Modal>
+                                </div>
+                            </section>
+                        </Modal.Body>
+                    </Modal>
+                </Col>
+            </Row>
         </Container>
     );
 }

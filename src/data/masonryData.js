@@ -41,7 +41,7 @@ export const masonryItems =
             live: "https://lynasim.github.io/bootcampW4_TODO_List/",
             repo: "https://github.com/LynaSim/bootcampW4_TODO_List.git",
         },
-                {
+        {
             id: "5",
             img: "/thumbnails/thumb-5.jpg",
             height: 250,
@@ -51,7 +51,7 @@ export const masonryItems =
             live: "",
             repo: "https://github.com/LynaSim/Python_README_Generator.git",
         },
-                        {
+        {
             id: "8",
             img: "/thumbnails/thumb-8.jpg",
             height: 500,
@@ -65,9 +65,9 @@ export const masonryItems =
             id: "6",
             img: "/thumbnails/thumb-6.jpg",
             height: 300,
-            title: "Simple Notes App - (Full-Stack CRUD)",
-            carouselImgz: ["/img/project6-1.jpg","/img/project6-2.jpg"],
-            description: "A lightweight, responsive web application for managing personal notes. This project demonstrates a complete CRUD (Create, Read, Update, Delete) workflow using a Node/Express backend and a Vanilla JavaScript frontend.",  
+            title: "Simple Notes App - Full-Stack CRUD",
+            carouselImgz: ["/img/project6-1.jpg", "/img/project6-2.jpg"],
+            description: "A lightweight, responsive web application for managing personal notes. This project demonstrates a complete CRUD (Create, Read, Update, Delete) workflow using a Node/Express backend and a Vanilla JavaScript frontend.",
             live: "https://full-stack-notes-app-node-express.onrender.com/",
             repo: "https://github.com/LynaSim/Full_Stack_Notes_App_Node_Express.git",
         },
@@ -75,7 +75,7 @@ export const masonryItems =
             id: "7",
             img: "/thumbnails/thumb-7.jpg",
             height: 400,
-            title: "full-stack CRUD blog application with authentication",
+            title: "Full-Stack CRUD blog application with authentication",
             carouselImgz: ["/img/project7-1.jpg", "/img/project7-2.jpg",],
             description: "Users can view, post, edit, categorise, and filter stories. Server: Node/Express. PostgresQL database with Sequelize ORM. Authentication Middleware via JSON Web Token.",
             live: "https://sequelize-full-stack-blog.onrender.com/",

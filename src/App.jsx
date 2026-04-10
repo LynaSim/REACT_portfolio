@@ -1,12 +1,8 @@
-// import { Container, Row, Col } from 'react-bootstrap';
-// import ProjectCard from './components/ProjectCard';
-// import { masonryItems } from './data/masonryData';
-// import Masonry from './components/Masonry';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Navigation from './components/Navigation';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -17,7 +13,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </BrowserRouter>
     );
 }

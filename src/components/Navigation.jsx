@@ -9,14 +9,12 @@ import { BiHomeHeart } from "react-icons/bi";
 import { IconContext } from "react-icons";
 
 
-
-
 function Navigation() {
         const [isOpen, setOpen] = useState(false)
 
     return (
 
-        <IconContext.Provider value={{ color: "white", size: "2.5rem" }}>
+        <IconContext.Provider value={{ color: "white", size: "2.5rem", className: "zoom"}}>
                 <div className="d-flex justify-content-center">
                     <Hamburger
                         size={48}
@@ -41,17 +39,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-// Old Boostrap Navbar code
-        // <Navbar bg="dark" variant="dark" expand="lg" className="fixed-top">
-        //     <Container className="">
-        //         <Navbar.Brand href="/"></Navbar.Brand>
-        //         <Navbar.Toggle aria-controls="basic-navbar-nav" className="rounded-5 border border-2" />
-        //         <Navbar.Collapse id="basic-navbar-nav">
-        //             <Nav className="ms-auto">
-        //                 <Nav.Link as={Link} to="/">Home</Nav.Link>
-        //                 <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-        //             </Nav>
-        //         </Navbar.Collapse>
-        //     </Container>
-        // </Navbar>

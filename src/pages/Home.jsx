@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import HomeAccordion from '../components/HomeAccordion';
 import { IconContext } from "react-icons";
-import '../App.css';
+import './Home.css';
+
 
 function Home() {
 
@@ -25,7 +26,7 @@ function Home() {
                     <HomeAccordion />
                 </Col>
             </Row>
-            <IconContext.Provider value={{ color: "white", size: "4rem" }}>
+            <IconContext.Provider value={{ className: "zoom", color: "white", size: "4rem" }}>
             <Row className="my-2">
                 <Col className="d-flex justify-content-center">
                     <Link to="https://github.com/LynaSim" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
@@ -40,7 +41,7 @@ function Home() {
                     </ Link>
                 </Col>
             </Row>
-            <Row className="my-2">
+            <Row className="mt-2 mb-5">
                 <Col className="d-flex justify-content-center">
                 <Link to="mailto:s.lyna.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope />

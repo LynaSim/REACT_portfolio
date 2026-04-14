@@ -1,7 +1,13 @@
 .h1-myname {
-  font-family: Shrikhand, serif;
+  font-family: Shrikhand, "Cooper Black", "Goudy Old Style", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 100px;
   font-weight: 400;
+}
+
+.h1-subheading {
+  font-family: -apple-system, Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .shrikhand-regular {

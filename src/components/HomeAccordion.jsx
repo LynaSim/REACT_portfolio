@@ -41,7 +41,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 function HomeAccordion() {
   return (
     <Accordion defaultActiveKey="">
-      <Card className="border border-0 bg-transparent text-white mt-5">
+      <Card className="accordion-section border border-0 bg-transparent text-white mt-5">
         <Card.Header className="d-flex justify-content-center border border-0 bg-transparent">
           <ContextAwareToggle eventKey="0" className="zoom">Overview</ContextAwareToggle>
         </Card.Header>
@@ -52,7 +52,7 @@ function HomeAccordion() {
             I cannot wait for opportunities to combine my diverse skills and experiences into building applications I feel passionate about!</Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card className="border border-0 bg-transparent text-white">
+      <Card className="accordion-section border border-0 bg-transparent text-white">
         <Card.Header className="d-flex justify-content-center border border-0 bg-transparent">
           <ContextAwareToggle eventKey="1">Tech Stack</ContextAwareToggle>
         </Card.Header>

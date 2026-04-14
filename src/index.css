@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Animated colour gradient background */
@@ -12,6 +12,9 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    font-family: -apple-system, Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @keyframes gradient {
@@ -27,11 +30,11 @@ body {
         background-position: 0% 50%;
     }
 }
+
 /* End of animated colour gradient background */
 
 .shrikhand-regular {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-

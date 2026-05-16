@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import './HomeAccordion.css';
 import Skills from './Skills';
+import Overview from './Overview';
 
 
 // const PINK = 'rgba(255, 192, 203, 0.6)';
@@ -46,10 +47,7 @@ function HomeAccordion() {
           <ContextAwareToggle eventKey="0" className="zoom">Overview</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body className="border border-0 bg-transparent text-center">Hello! I'm Lyna, and I've just concluded a 12-week web development bootcamp, officially starting my path as a full-stack developer!<br /><br />
-            My journey began in the publishing industry as an XML content specialist. I managed complex XML data structures and prepared them for the production pipeline. With authors, I liaised closely to ensure their intent was translated accurately. Another very enjoyable aspect of my work was collaborating with the development team to ensure the data was compliant with standards and fit for transformation.<br /> It is then that I discovered web development and, while I enjoyed the rigor of XML structures, I became fascinated with the process of turning raw data into interactive user experiences.<br /><br />
-            Years later, after time dedicated to my family and a very rewarding chapter in SEN education, I have returned to my technical roots by completing this intensive but thoroughly enjoyable 12-week full-stack bootcamp.<br /><br />
-            I cannot wait for opportunities to combine my diverse skills and experiences into building applications I feel passionate about!</Card.Body>
+          <Overview />
         </Accordion.Collapse>
       </Card>
       <Card className="accordion-section border border-0 bg-transparent text-white">

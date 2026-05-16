@@ -78,7 +78,7 @@ export const masonryItems =
             title: "Full-Stack CRUD blog application with authentication",
             carouselImgz: ["/img/project7-1.jpg", "/img/project7-2.jpg",],
             description: "Users can view, post, edit, categorise, and filter stories. Server: Node/Express. PostgresQL database with Sequelize ORM. Authentication Middleware via JSON Web Token.",
-            live: "https://sequelize-full-stack-blog.onrender.com/",
+            live: "",
             repo: "https://github.com/LynaSim/Blog_With_Auth_MySQL_SequelizeORM.git",
         },
         // ... more items

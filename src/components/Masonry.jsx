@@ -1,4 +1,4 @@
-// This was provided by React Bits
+// This bit of code was provided by React Bits at https://reactbits.dev/components/masonry
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { masonryItems } from '../data/masonryData';

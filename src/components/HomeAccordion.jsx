@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import './HomeAccordion.css';
 import Skills from './Skills';
-import Overview from './Overview';
+import Hello from './Hello';
 
 
 // const PINK = 'rgba(255, 192, 203, 0.6)';
@@ -44,10 +44,10 @@ function HomeAccordion() {
     <Accordion defaultActiveKey="">
       <Card className="accordion-section border border-0 bg-transparent text-white mt-5">
         <Card.Header className="d-flex justify-content-center border border-0 bg-transparent">
-          <ContextAwareToggle eventKey="0" className="zoom">Overview</ContextAwareToggle>
+          <ContextAwareToggle eventKey="0" className="zoom">Hello</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Overview />
+          <Hello />
         </Accordion.Collapse>
       </Card>
       <Card className="accordion-section border border-0 bg-transparent text-white">
